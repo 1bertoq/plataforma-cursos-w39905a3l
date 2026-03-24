@@ -25,7 +25,7 @@ export default function Layout() {
                 <div className="bg-blue-600 p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
                   <BookOpen className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xl font-bold tracking-tight">OrionStar Trainamentos</span>
+                <span className="text-xl font-bold tracking-tight">OrionStar Treinamentos</span>
               </Link>
             </div>
 
@@ -84,7 +84,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-sans">
         <Outlet />
       </main>
 
