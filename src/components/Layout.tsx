@@ -93,7 +93,7 @@ export default function Layout() {
           <div className="flex items-center gap-2 opacity-80">
             <BookOpen className="h-5 w-5 text-gray-400" />
             <span className="text-gray-500 font-medium text-sm">
-              CorpLearn © {new Date().getFullYear()}
+              OrionStar © {new Date().getFullYear()}
             </span>
           </div>
           <div className="flex gap-6">
