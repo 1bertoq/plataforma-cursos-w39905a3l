@@ -37,7 +37,7 @@ export default function Index() {
             Desenvolvimento Contínuo
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
-            Plataforma de <span className="text-blue-600">Cursos Corporativos</span>
+            g de <span className="text-blue-600">Cursos Corporativos</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 font-medium max-w-2xl mx-auto">
             Impulsione sua carreira com nossos treinamentos especializados. Desenvolva novas

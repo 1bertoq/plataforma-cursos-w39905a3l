@@ -25,7 +25,7 @@ export default function Layout() {
                 <div className="bg-blue-600 p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
                   <BookOpen className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xl font-bold tracking-tight">CorpLearn</span>
+                <span className="text-xl font-bold tracking-tight">OrionStar Trainamentos</span>
               </Link>
             </div>
 
