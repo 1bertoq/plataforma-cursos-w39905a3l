@@ -32,14 +32,14 @@ export default function Index() {
         <div className="relative max-w-3xl mx-auto space-y-6">
           <Badge
             variant="secondary"
-            className="bg-blue-50 text-blue-700 hover:bg-blue-100 border-none px-4 py-1.5 text-sm font-semibold mb-4"
+            className="bg-blue-50 text-blue-700 hover:bg-blue-100 border-none px-4 py-1.5 text-sm font-medium font-sans mb-4"
           >
             Desenvolvimento Contínuo
           </Badge>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight font-poppins">
             Portal de <span className="text-blue-600">Cursos Corporativos</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 font-medium max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 font-normal max-w-2xl mx-auto">
             Impulsione sua carreira com nossos treinamentos especializados. Desenvolva novas
             habilidades e alcance seu potencial máximo hoje mesmo.
           </p>
@@ -87,10 +87,10 @@ export default function Index() {
 
       <section>
         <div className="flex items-center justify-between mb-6 px-1">
-          <h2 className="text-2xl font-bold text-gray-900">
+          <h2 className="text-2xl font-semibold text-gray-900 font-poppins">
             {selectedAcademy === 'Todas' ? 'Todos os Cursos' : `Cursos de ${selectedAcademy}`}
           </h2>
-          <span className="text-sm font-semibold text-gray-500 bg-gray-200 px-3 py-1 rounded-full">
+          <span className="text-sm font-medium font-sans text-gray-500 bg-gray-200 px-3 py-1 rounded-full">
             {filteredCourses.length} {filteredCourses.length === 1 ? 'resultado' : 'resultados'}
           </span>
         </div>
@@ -106,14 +106,16 @@ export default function Index() {
             <div className="bg-gray-50 p-6 rounded-full mb-6">
               <GraduationCap className="h-12 w-12 text-gray-400" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Nenhum curso encontrado</h3>
-            <p className="text-gray-500 max-w-md text-lg">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2 font-poppins">
+              Nenhum curso encontrado
+            </h3>
+            <p className="text-gray-500 max-w-md text-base font-normal">
               Não encontramos nenhum curso com os filtros selecionados. Tente buscar por outros
               termos ou limpar os filtros.
             </p>
             <Button
               variant="outline"
-              className="mt-8 rounded-full font-semibold border-gray-200 hover:bg-gray-50 hover:text-gray-900"
+              className="mt-8 rounded-full font-medium font-sans border-gray-200 hover:bg-gray-50 hover:text-gray-900"
               onClick={() => {
                 setSearchQuery('')
                 setSelectedAcademy('Todas')

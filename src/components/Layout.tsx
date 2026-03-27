@@ -25,7 +25,9 @@ export default function Layout() {
                 <div className="bg-blue-600 p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
                   <BookOpen className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xl font-bold tracking-tight">OrionStar Treinamentos</span>
+                <span className="text-xl font-bold font-poppins tracking-tight">
+                  OrionStar Treinamentos
+                </span>
               </Link>
             </div>
 
@@ -35,7 +37,7 @@ export default function Layout() {
                   key={link.path}
                   to={link.path}
                   className={cn(
-                    'text-sm font-semibold transition-colors',
+                    'text-sm font-medium font-sans transition-colors',
                     location.pathname === link.path
                       ? 'text-blue-600'
                       : 'text-gray-600 hover:text-gray-900',
@@ -55,7 +57,7 @@ export default function Layout() {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[280px] sm:w-[350px]">
                   <SheetHeader className="text-left mb-6 mt-4">
-                    <SheetTitle className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                    <SheetTitle className="text-xl font-bold font-poppins text-gray-900 flex items-center gap-2">
                       <BookOpen className="h-5 w-5 text-blue-600" />
                       CorpLearn
                     </SheetTitle>
@@ -67,7 +69,7 @@ export default function Layout() {
                         to={link.path}
                         onClick={() => setIsOpen(false)}
                         className={cn(
-                          'block px-4 py-3 text-base font-semibold rounded-xl transition-all',
+                          'block px-4 py-3 text-base font-medium font-sans rounded-xl transition-all',
                           location.pathname === link.path
                             ? 'text-blue-600 bg-blue-50'
                             : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
@@ -92,15 +94,21 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2 opacity-80">
             <BookOpen className="h-5 w-5 text-gray-400" />
-            <span className="text-gray-500 font-medium text-sm">
+            <span className="text-gray-500 font-normal font-sans text-sm">
               OrionStar © {new Date().getFullYear()}
             </span>
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+            <a
+              href="#"
+              className="text-sm font-normal font-sans text-gray-500 hover:text-gray-900 transition-colors"
+            >
               Privacidade
             </a>
-            <a href="#" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+            <a
+              href="#"
+              className="text-sm font-normal font-sans text-gray-500 hover:text-gray-900 transition-colors"
+            >
               Termos de Uso
             </a>
           </div>

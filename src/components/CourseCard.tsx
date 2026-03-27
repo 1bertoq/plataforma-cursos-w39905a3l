@@ -29,7 +29,7 @@ export function CourseCard({ course, showProgress }: CourseCardProps) {
         />
         <Badge
           className={cn(
-            'absolute right-3 top-3 border-none font-bold shadow-sm px-2.5 py-0.5',
+            'absolute right-3 top-3 border-none shadow-sm px-2.5 py-0.5',
             LEVEL_COLORS[course.level],
           )}
           variant="secondary"
@@ -39,25 +39,25 @@ export function CourseCard({ course, showProgress }: CourseCardProps) {
       </div>
 
       <CardHeader className="p-5 pb-2 shrink-0">
-        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1.5">
+        <span className="text-xs font-medium font-sans uppercase tracking-wider text-blue-600 mb-1.5">
           {course.academy}
         </span>
-        <h3 className="font-extrabold text-lg leading-tight text-gray-900 line-clamp-2 min-h-[3.5rem]">
+        <h3 className="font-poppins font-semibold text-lg leading-tight text-gray-900 line-clamp-2 min-h-[3.5rem]">
           {course.title}
         </h3>
       </CardHeader>
 
       <CardContent className="p-5 pt-0 flex-grow flex flex-col">
-        <p className="text-sm text-gray-600 line-clamp-2 mb-4">{course.description}</p>
+        <p className="text-sm font-normal text-gray-600 line-clamp-2 mb-4">{course.description}</p>
 
-        <div className="flex items-center text-sm font-medium text-gray-500 mb-4 bg-gray-50 self-start px-2.5 py-1 rounded-md">
+        <div className="flex items-center text-sm font-normal text-gray-500 mb-4 bg-gray-50 self-start px-2.5 py-1 rounded-md">
           <Play className="h-4 w-4 mr-1.5 text-blue-500" />
           <span>{course.lessons} aulas</span>
         </div>
 
         {showProgress && course.progress !== undefined && (
           <div className="space-y-2 mt-auto">
-            <div className="flex justify-between text-xs font-bold text-gray-700">
+            <div className="flex justify-between text-xs font-medium font-sans text-gray-700">
               <span>Progresso</span>
               <span className="text-blue-600">{course.progress}%</span>
             </div>
@@ -67,7 +67,7 @@ export function CourseCard({ course, showProgress }: CourseCardProps) {
       </CardContent>
 
       <CardFooter className="p-5 pt-0 shrink-0 mt-auto">
-        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all shadow-sm group-hover:shadow">
+        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium font-sans transition-all shadow-sm group-hover:shadow">
           {showProgress ? 'Continuar Curso' : 'Acessar Curso'}
         </Button>
       </CardFooter>
