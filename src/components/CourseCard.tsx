@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Play } from 'lucide-react'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -67,8 +68,13 @@ export function CourseCard({ course, showProgress }: CourseCardProps) {
       </CardContent>
 
       <CardFooter className="p-5 pt-0 shrink-0 mt-auto">
-        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium font-sans transition-all shadow-sm group-hover:shadow">
-          {showProgress ? 'Continuar Curso' : 'Acessar Curso'}
+        <Button
+          asChild
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium font-sans transition-all shadow-sm group-hover:shadow"
+        >
+          <Link to={`/curso/${course.id}`}>
+            {showProgress ? 'Continuar Curso' : 'Acessar Curso'}
+          </Link>
         </Button>
       </CardFooter>
     </Card>
