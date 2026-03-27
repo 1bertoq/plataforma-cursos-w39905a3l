@@ -6,6 +6,7 @@ import Index from './pages/Index'
 import MyCourses from './pages/MyCourses'
 import About from './pages/About'
 import CourseDetails from './pages/CourseDetails'
+import LessonPlayer from './pages/LessonPlayer'
 import NotFound from './pages/NotFound'
 import Layout from './components/Layout'
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/meus-cursos" element={<MyCourses />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/curso/:id" element={<CourseDetails />} />
+          <Route path="/curso/:id/aula/:lessonId?" element={<LessonPlayer />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
