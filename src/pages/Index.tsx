@@ -32,7 +32,7 @@ export default function Index() {
         <div className="relative max-w-3xl mx-auto space-y-6">
           <Badge
             variant="secondary"
-            className="bg-blue-50 text-blue-700 hover:bg-blue-100 border-none px-4 py-1.5 text-sm font-medium font-sans mb-4"
+            className="bg-blue-50 text-blue-700 hover:bg-blue-100 border-none px-4 py-1.5 text-sm font-medium font-poppins mb-4"
           >
             Desenvolvimento Contínuo
           </Badge>
